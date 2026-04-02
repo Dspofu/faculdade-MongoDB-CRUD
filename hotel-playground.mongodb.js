@@ -122,7 +122,126 @@ db.hospede.insertMany([
 
 // Coleção 2: [nome]
 db.reserva.insertMany([
-    // quantidade adequada
+  {
+    quarto: 101,
+    hospede_cpf: "84736291011",
+    data_inicio: new Date("2026-07-01"),
+    data_fim: new Date("2026-07-05"),
+    valor_total: 1500,
+    servicos_adicionais: ["café da manhã", "estacionamento"]
+  },
+  {
+    quarto: 102,
+    hospede_cpf: "19384756200",
+    data_inicio: new Date("2026-07-10"),
+    data_fim: new Date("2026-07-15"),
+    valor_total: 2000,
+    servicos_adicionais: ["wi-fi premium"]
+  },
+  {
+    quarto: 201,
+    hospede_cpf: "56473829102",
+    data_inicio: new Date("2026-07-12"),
+    data_fim: new Date("2026-07-14"),
+    valor_total: 800,
+    servicos_adicionais: ["café da manhã"]
+  },
+  {
+    quarto: 305,
+    hospede_cpf: "91827364509",
+    data_inicio: new Date("2026-08-01"),
+    data_fim: new Date("2026-08-10"),
+    valor_total: 4500,
+    servicos_adicionais: ["frigobar", "lavanderia"]
+  },
+  {
+    quarto: 104,
+    hospede_cpf: "10293847566",
+    data_inicio: new Date("2026-08-05"),
+    data_fim: new Date("2026-08-07"),
+    valor_total: 950,
+    servicos_adicionais: ["estacionamento"]
+  },
+  {
+    quarto: 202,
+    hospede_cpf: "67584930218",
+    data_inicio: new Date("2026-08-15"),
+    data_fim: new Date("2026-08-20"),
+    valor_total: 2200,
+    servicos_adicionais: ["meia pensão"]
+  },
+  {
+    quarto: 401,
+    hospede_cpf: "56473820199",
+    data_inicio: new Date("2026-09-01"),
+    data_fim: new Date("2026-09-03"),
+    valor_total: 1200,
+    servicos_adicionais: ["spa", "café da manhã"]
+  },
+  {
+    quarto: 105,
+    hospede_cpf: "91827364588",
+    data_inicio: new Date("2026-09-10"),
+    data_fim: new Date("2026-09-12"),
+    valor_total: 700,
+    servicos_adicionais: []
+  },
+  {
+    quarto: 205,
+    hospede_cpf: "37482910567",
+    data_inicio: new Date("2026-10-12"),
+    data_fim: new Date("2026-10-15"),
+    valor_total: 1800,
+    servicos_adicionais: ["estacionamento"]
+  },
+  {
+    quarto: 301,
+    hospede_cpf: "82736491023",
+    data_inicio: new Date("2026-10-20"),
+    data_fim: new Date("2026-10-25"),
+    valor_total: 3000,
+    servicos_adicionais: ["aluguel de carro"]
+  },
+  {
+    quarto: 108,
+    hospede_cpf: "56473829911",
+    data_inicio: new Date("2026-11-01"),
+    data_fim: new Date("2026-11-05"),
+    valor_total: 1600,
+    servicos_adicionais: ["café da manhã"]
+  },
+  {
+    quarto: 210,
+    hospede_cpf: "91827360012",
+    data_inicio: new Date("2026-11-15"),
+    data_fim: new Date("2026-11-18"),
+    valor_total: 1350,
+    servicos_adicionais: ["wi-fi premium", "frigobar"]
+  },
+  {
+    quarto: 303,
+    hospede_cpf: "10293840055",
+    data_inicio: new Date("2026-12-20"),
+    data_fim: new Date("2026-12-27"),
+    valor_total: 5000,
+    servicos_adicionais: ["ceia de natal", "estacionamento"]
+  },
+  {
+    quarto: 109,
+    hospede_cpf: "67584939987",
+    data_inicio: new Date("2026-12-28"),
+    data_fim: new Date("2025-01-02"),
+    valor_total: 6500,
+    servicos_adicionais: ["festa de reveillon", "open bar"]
+  },
+  {
+    quarto: 405,
+    hospede_cpf: "84736295544",
+    data_inicio: new Date("2025-01-10"),
+    data_fim: new Date("2025-01-15"),
+    valor_total: 2500,
+    servicos_adicionais: ["guia turístico"]
+  }
 ])
 
 // --------------------------------------------------
