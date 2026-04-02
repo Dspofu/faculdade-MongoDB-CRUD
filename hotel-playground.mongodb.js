@@ -28,7 +28,96 @@ db.reserva.drop()
 
 // Coleção 1: [nome]
 db.hospede.insertMany([
-    // mínimo 15 documentos
+  {
+    nome: "Mariana Oliveira",
+    idade: 28,
+    cpf: "84736291011",
+    genero: false,
+  },
+  {
+    nome: "Carlos Eduardo Lima",
+    idade: 45,
+    cpf: "19384756200",
+    genero: true,
+  },
+  {
+    nome: "Fernanda Alves",
+    idade: 34,
+    cpf: "56473829102",
+    genero: false,
+  },
+  {
+    nome: "Ricardo Mendes",
+    idade: 51,
+    cpf: "91827364509",
+    genero: true,
+  },
+  {
+    nome: "Juliana Rocha",
+    idade: 23,
+    cpf: "10293847566",
+    genero: false,
+  },
+  {
+    nome: "Bruno Carvalho",
+    idade: 39,
+    cpf: "67584930218",
+    genero: true,
+  },
+  {
+    nome: "Patricia Gomes",
+    idade: 41,
+    cpf: "56473820199",
+    genero: false,
+  },
+  {
+    nome: "Lucas Fernandes",
+    idade: 27,
+    cpf: "91827364588",
+    genero: true,
+  },
+  {
+    nome: "Aline Ribeiro",
+    idade: 30,
+    cpf: "37482910567",
+    genero: false,
+  },
+  {
+    nome: "Diego Martins",
+    idade: 36,
+    cpf: "82736491023",
+    genero: true,
+  },
+  {
+    nome: "Camila Nunes",
+    idade: 29,
+    cpf: "56473829911",
+    genero: false,
+  },
+  {
+    nome: "Rafael Teixeira",
+    idade: 44,
+    cpf: "91827360012",
+    genero: true,
+  },
+  {
+    nome: "Larissa Pinto",
+    idade: 26,
+    cpf: "10293840055",
+    genero: false,
+  },
+  {
+    nome: "Felipe Batista",
+    idade: 38,
+    cpf: "67584939987",
+    genero: true,
+  },
+  {
+    nome: "Renata Duarte",
+    idade: 33,
+    cpf: "84736295544",
+    genero: false,
+  }
 ])
 
 // Coleção 2: [nome]
