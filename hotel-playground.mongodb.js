@@ -18,15 +18,16 @@ use('hotel')
 // 1.1 EXCLUSÃO DE COLEÇÕES - PARA EXECUÇÃO LIMPA
 // --------------------------------------------------
 
-// Coleção 1: [nome]
+// Coleção 1: Hospede
 db.hospede.drop()
+// Coleção 2: Reserva
 db.reserva.drop()
 
 // --------------------------------------------------
 // 2. INSERÇÃO DE DADOS
 // --------------------------------------------------
 
-// Coleção 1: [nome]
+// Coleção 1: Hospede
 db.hospede.insertMany([
   {
     nome: "Mariana Oliveira",
@@ -120,7 +121,7 @@ db.hospede.insertMany([
   }
 ])
 
-// Coleção 2: [nome]
+// Coleção 2: Reserva
 db.reserva.insertMany([
   {
     quarto: 101,
@@ -248,23 +249,23 @@ db.reserva.insertMany([
 // 3. CONSULTAS COM OPERADORES DE COMPARAÇÃO
 // --------------------------------------------------
 
-// 3.1 $gt - [explicação]
-db.hospede.find({ campo: { $gt: valor } }).pretty()
+// 3.1 $gt - (GET) Serve para procurar por um valor exatamente igual ao solicitado 
+db.hospede.find({ nome: { $gt: "Fernanda Alves" } }).pretty()
 
-// 3.2 $lt - [explicação]
-db.hospede.find({ campo: { $lt: valor } }).pretty()
+// 3.2 $lt - (Less Then) Serve para procurar por um valor menor que o valor solicitado
+db.hospede.find({ idade: { $lt: 18 } }).pretty()
 
-// 3.3 $gte - [explicação]
-db.hospede.find({ campo: { $gte: valor } }).pretty()
+// 3.3 $gte - (Greater Then) Serve para procurar por um valor maior ou igual que o valor solicitado
+db.reserva.find({ valor_total: { $gte: 3000 } }).pretty()
 
-// 3.4 $lte - [explicação]
-db.hospede.find({ campo: { $lte: valor } }).pretty()
+// 3.4 $lte - (Less or Equal) Serve para procurar por um valor menor ou igual ao valor solicitado
+db.reserva.find({ valor_total: { $lte: 6000 } }).pretty()
 
-// 3.5 $in - [explicação]
-db.hospede.find({ campo: { $in: [valor1, valor2] } }).pretty()
+// 3.5 $in - (In array) Serve para procurar por um valor dentro de uma Array
+db.hospede.find({ servicos_adicionais: { $in: ["wi-fi premium"] } }).pretty()
 
-// 3.6 $ne - [explicação]
-db.hospede.find({ campo: { $ne: valor } }).pretty()
+// 3.6 $ne - (Not Equal) Serve para procurar valores diferentes do especificado
+db.hospede.find({ genero: { $ne: false } }).pretty()
 
 // --------------------------------------------------
 // 4. CONSULTAS COM OPERADORES LÓGICOS
